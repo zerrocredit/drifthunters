@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8">
   <title>Drift Hunters</title>
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
+      background: black;
       overflow: hidden;
-      background-color: black;
     }
-
     #gameContainer {
       position: fixed;
       top: 0;
@@ -19,19 +18,14 @@
       width: 100vw;
       height: 100vh;
     }
-
     canvas {
       width: 100% !important;
       height: 100% !important;
-      display: block;
     }
   </style>
   <script src="Build/UnityLoader.js"></script>
   <script>
-    var gameInstance;
-    window.onload = function () {
-      gameInstance = UnityLoader.instantiate("gameContainer", "Build/ItchIO.json");
-    };
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/ItchIO.json");
   </script>
 </head>
 <body>
